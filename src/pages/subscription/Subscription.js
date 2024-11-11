@@ -1,11 +1,13 @@
-import React from 'react'
+// src/pages/subscription/Subscription.js
+import React from 'react';
+import PageLayout from '../../components/PageLayout';
 
 function Subscription() {
   return (
-    <div className='text-white flex justify-center items-center w-full h-screen'>
-        <h1 className='text-4xl'>Subscriptions holder</h1>
-    </div>
-  )
+    <PageLayout title="Subscriptions">
+      <h2 className="text-xl font-bold">Subscriptions</h2>
+    </PageLayout>
+  );
 }
 
-export default Subscription
+export default Subscription;

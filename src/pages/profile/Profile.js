@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import PageLayout from '../../components/PageLayout';
+import Login from '../../components/Login';
 
 function Profile() {
   return (
-    <div className='text-white flex justify-center items-center w-full h-screen'>
-        <h1 className='text-4xl'>Profile holder page</h1>
-    </div>
-  )
+    <PageLayout title="Welcome to Keerthana's Page">
+      <h2 className="text-xl">Profile holder page</h2>
+      <Login />
+    </PageLayout>
+  );
 }
 
-export default Profile
+export default Profile;
