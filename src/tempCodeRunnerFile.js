@@ -1,4 +1,3 @@
-import Mycomponent from './component/Mycomponent';
 import Navbar from './header/Navbar';
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
@@ -9,14 +8,15 @@ import Subscription from './pages/subscription/Subscription';
 import Wallet from './pages/wallet/Wallet';
 import User from './pages/user/User';
 import Profile from './pages/profile/Profile';
-import './App.css'; 
-
+import React from 'react';
 
 
 function App() {
   return (
-    <div className="bg-blue-500 text-xl text-black p-10 m-6 rounded-md shadow-lg" >
-      <Mycomponent />
+    <button className="bg-blue-500 text-white p-4 rounded-lg shadow-md hover:bg-blue-600">
+      Welcome to Keerthana's page
+    </button>
+    
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -28,8 +28,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
 
-
-    </div>
+    
   );
 }
 
