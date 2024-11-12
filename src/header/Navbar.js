@@ -13,6 +13,7 @@ function Navbar() {
         <Link to="/profile">Profile</Link>
         <Link to="/wallet">Wallet</Link>
         <Link to="/contact">Contact Us</Link>
+        <Link to="/user-management" className="text-black">User Management</Link> {/* New Link */}
         <Link to="/mycomponent">MyComponent</Link>  {/* Ensure this link is correct */}
       </div>
     </nav>

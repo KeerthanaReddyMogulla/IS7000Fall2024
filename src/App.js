@@ -8,6 +8,7 @@ import User from './pages/user/User';
 import Profile from './pages/profile/Profile';
 import Wallet from './pages/wallet/Wallet';
 import Contact from './pages/wallet/Contact';
+import UserManagement from './pages/user/UserManagement'; // Import User Management
 import MyComponent from './components/mycomponent'; // Ensure this path is correct
 import './App.css'; // Include any necessary CSS
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/user-management" element={<UserManagement />} /> {/* Add User Management Route */}
           <Route path="/mycomponent" element={<MyComponent />} /> {/* Check the path and component name */}
         </Routes>
       </div>
